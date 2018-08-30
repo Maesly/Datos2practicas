@@ -23,8 +23,7 @@ int main() {
                 int tam;
                 cin >> tam;
                 int arr[tam];
-                cout << "Ingrese los valores de los datos en el arreglo" <<
-                     " ADVERTENCIA: el arreglo debe estar ordenado" << endl;
+                cout << "Ingrese los valores de los datos en el arreglo" << endl;
                 int valor;
                 for (int i = 0; i < tam; i++) {
                     cin >> valor;
@@ -33,7 +32,10 @@ int main() {
                 }
                 cout << "Ingrese el dato que desea buscar en el arreglo: " << endl;
                 cin >> valor;
+
                 busqueda_secuencial->busqueda_secuencial(arr, valor);
+
+                delete(busqueda_secuencial);
                 break;
             }
             case 2:{
@@ -43,8 +45,7 @@ int main() {
                 int tam;
                 cin >> tam;
                 int arr[tam];
-                cout << "Ingrese los valores de los datos en el arreglo." <<
-                     " ADVERTENCIA: el arreglo debe estar ordenado" << endl;
+                cout << "Ingrese los valores de los datos en el arreglo." << endl;
                 int valor;
                 for (int i = 0; i < tam; i++) {
                     cin >> valor;
@@ -54,8 +55,10 @@ int main() {
                 cout << "Tamaño "<<sizeof(arr)/ sizeof(arr[0])<<endl;
                 cout << "Ingrese el dato que desea buscar en el arreglo: " << endl;
                 cin >> valor;
-                busqueda_binaria->ordenarArreglo(arr,tam,valor);
+                busqueda_binaria->setDato(valor);
+                busqueda_binaria->ordenarArreglo(arr,tam);
 
+                delete(busqueda_binaria);
                 break;
             }
 

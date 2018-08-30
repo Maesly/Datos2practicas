@@ -16,7 +16,7 @@ void Busqueda_Binaria::mostrar(int arr[], int tam) {
     }
     cout << "]" << endl;
 }
-void Busqueda_Binaria::ordenarArreglo(int arreglo[],int tam,int dato) {
+void Busqueda_Binaria::ordenarArreglo(int arreglo[],int tam) {
     for (int i = 0; i < tam -1; i++) {
         for (int j = 0; j < tam -1; j++) {
             if(arreglo[j] > arreglo[j+1])

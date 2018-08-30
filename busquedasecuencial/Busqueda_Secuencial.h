@@ -9,8 +9,15 @@ using namespace std;
 class Busqueda_Secuencial{
 
 public:
-
+    /**
+     * @brief Constructor de la clase
+     */
     Busqueda_Secuencial(){}
+    /**
+     * @brief Algoritmo de busqueda, busca un elemento en un arreglo de manera secuencial
+     * @param arr Arreglo en el que se desea buscar un elemento
+     * @param val Valor que se desea buscar en el arreglo
+     */
     void busqueda_secuencial(int arr[],int val){
         int pos = 0;
         for(int i = 0;i < sizeof(arr);i++){
